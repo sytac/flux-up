@@ -1,7 +1,7 @@
 {
   "name": "flux-app",
-  "version": "0.1.0",
-  "description": "Manage modules and services for flex based applications",
+  "version": "0.1.1",
+  "description": "Manage modules and services for flux based applications",
   "main": "src/index.js",
   "scripts": {
     "test": "gulp mocha"
@@ -30,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sytac/flux-app"
+    "url": "https://github.com/sytac/flux-app.git"
   }
 }

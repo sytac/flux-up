@@ -1,5 +1,5 @@
 #Flex App
-*Keep clean your code building huge flex/react apps.*
+*Keep clean your code building huge flux/react apps.*
 
 ##Why?
 - Building TodoMVC app is fancy but useless in daily work. 
@@ -12,14 +12,14 @@
 Install using npm
 
 ```bash
-$ npm install --save flex-app
+$ npm install --save flux-app
 ```
 
 ## Quick start
 
 ####Prepare your folder struct
 ```
-flex-app-project
+flux-app-project
 │  README.md
 │  ...    
 |
@@ -47,7 +47,7 @@ flex-app-project
 ```
 
 ####Add a module description file
-Each module require a *.module.js file containing the description of the module. No fields are required. Add an "actions" field for actions, a "stores" fields for stores. This fields are passed directly to the addStores and addActions callbacks set in the ```init``` method. Check your flex library docs for the right format. Examples are provided using [Fluxxor](http://fluxxor.com/).  
+Each module require a *.module.js file containing the description of the module. No fields are required. Add an "actions" field for actions, a "stores" fields for stores. This fields are passed directly to the addStores and addActions callbacks set in the ```init``` method. Check your flux library docs for the right format. Examples are provided using [Fluxxor](http://fluxxor.com/).  
 
 ```javascript
 /* foo.module.js */
@@ -61,7 +61,7 @@ module.exports = {
   },
   stores : {
     // Fluxxor require store instance, other library could work differently
-    // Check the flex lib documentation  
+    // Check the flux lib documentation  
     'foo' : new FooStore()
   },
   services : {
@@ -105,7 +105,7 @@ this.getFlux().store('foo');
 this.getFlux().actions.foo.someAction();
 ```
  
- The services are added directly to the flex-app module and could be retrieved everywere:
+ The services are added directly to the flux-app module and could be retrieved everywere:
  
  ```
  var fluxApp = require('flux-app');
