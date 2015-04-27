@@ -1,0 +1,45 @@
+# npm ignore
+npm-debug.log
+node_modules
+mocha.json
+coverage
+
+# Sublime Text
+*.sublime-workspace
+
+# vim
+*.swp
+
+# kdiff3
+*.orig
+
+# OSX
+Thumbs.db
+.DS_Store
+
+# Maven generated files
+target/
+/MANIFEST.MF
+overlays/
+
+# Compiled files
+*.class
+
+# Packages
+*.jar
+*.zip
+
+# Eclipse files
+*.classpath
+*.project
+*.settings
+.checkstyle
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+/.metadata
+/Servers
+
+# Dist package
+dist

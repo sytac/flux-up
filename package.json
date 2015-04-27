@@ -1,0 +1,35 @@
+{
+  "name": "flux-app",
+  "version": "0.1.0",
+  "description": "Manage modules and services for flex based applications",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "gulp mocha"
+  },
+  "keywords": [
+    "react",
+    "flux",
+    "fluxxor"
+  ],
+  "author": "Davide Fiorello <davide@codeflyer.com> (http://github.com/codeflyer/)",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "chai": "^2.2.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-cjs-tasks": "^0.1.3",
+    "gulp-eslint": "^0.10.0",
+    "gulp-mocha": "^2.0.1",
+    "minimist": "^1.1.1",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1",
+    "uglifyify": "^3.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sytac/flux-app"
+  }
+}
