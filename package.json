@@ -1,5 +1,5 @@
 {
-  "name": "flux-app",
+  "name": "flux-up",
   "version": "0.1.1",
   "description": "Manage modules and services for flux based applications",
   "main": "src/index.js",
@@ -30,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sytac/flux-app.git"
+    "url": "https://github.com/sytac/flux-up.git"
   }
 }

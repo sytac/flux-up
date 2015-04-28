@@ -12,14 +12,14 @@
 Install using npm
 
 ```bash
-$ npm install --save flux-app
+$ npm install --save flux-up
 ```
 
 ## Quick start
 
 ####Prepare your folder struct
 ```
-flux-app-project
+flux-up-project
 │  README.md
 │  ...    
 |
@@ -75,24 +75,24 @@ module.exports = {
 
 ```javascript
 /* app.js */
-var fluxApp = require('flux-app');
+var fluxUp = require('flux-up');
 
 // Init your flux library
 var flux = new Fluxxor.Flux();
 
 // Init app with callback for adding stores and actions
-fluxApp.init(
+fluxUp.init(
     flux.addStores.bind(flux), 
     flux.addActions.bind(flux)
 );
 
 // Register modules 
-fluxApp.modules.register('app', require('./app.module'));
-fluxApp.modules.register('foo', require('modules/foo/foo.module'));
-fluxApp.modules.register('bar', require('modules/bar/bar.module'));
+fluxUp.modules.register('app', require('./app.module'));
+fluxUp.modules.register('foo', require('modules/foo/foo.module'));
+fluxUp.modules.register('bar', require('modules/bar/bar.module'));
 
 // register additional services
-fluxApp.services.register('translationService', require('./translation.service'));
+fluxUp.services.register('translationService', require('./translation.service'));
 
 ```
 In the register operation, stores and actions are directly added to flux instance.
@@ -105,12 +105,12 @@ this.getFlux().store('foo');
 this.getFlux().actions.foo.someAction();
 ```
  
- The services are added directly to the flux-app module and could be retrieved everywere:
+ The services are added directly to the flux-up module and could be retrieved everywere:
  
  ```
- var fluxApp = require('flux-app');
+ var fluxUp = require('flux-up');
  ...
- var translationService =  fluxApp.services.get('translationService');
+ var translationService =  fluxUp.services.get('translationService');
  
  ```
   
