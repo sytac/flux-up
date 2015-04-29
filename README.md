@@ -22,26 +22,26 @@ $ npm install --save flux-up
 flux-up-project
 │  README.md
 │  ...    
-|
+│
 └──src
    │  app.js
    │  app.module.js
-   |  translation.service.js
+   │  translation.service.js
    │
    ├──modules
-   │  ├--foo
-   |  |   foo.js 
+   │  ├──foo
+   │  │   foo.js 
    │  │   foo.module.js
-   |  |   foo.stores.js
-   |  |   foo.actions.js
-   |  |   foo.services.js
+   │  │   foo.stores.js
+   │  │   foo.actions.js
+   │  │   foo.services.js
    │  │   ...
-   |  ├--bar
-   |  |   bar.js 
+   │  ├──bar
+   │  │   bar.js 
    │  │   bar.module.js
-   |  |   bar.stores.js
-   |  |   bar.actions.js
-   |  |   bar.services.js
+   │  │   bar.stores.js
+   │  │   bar.actions.js
+   │  │   bar.services.js
    │  │   ...
 ...
 ```
