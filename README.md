@@ -1,7 +1,7 @@
-#Flex App
+# Flux Up
 *Keep clean your code building huge flux/react apps.*
 
-##Why?
+## Why?
 - Building TodoMVC app is fancy but useless in daily work. 
 - Huge apps need to be modularized.
 - Huge apps need services.
@@ -17,7 +17,7 @@ $ npm install --save flux-up
 
 ## Quick start
 
-####Prepare your folder struct
+#### Prepare your folder struct
 ```
 flux-up-project
 │  README.md
@@ -46,7 +46,7 @@ flux-up-project
 ...
 ```
 
-####Add a module description file
+#### Add a module description file
 Each module require a *.module.js file containing the description of the module. No fields are required. Add an "actions" field for actions, a "stores" fields for stores. This fields are passed directly to the addStores and addActions callbacks set in the ```init``` method. Check your flux library docs for the right format. Examples are provided using [Fluxxor](http://fluxxor.com/).  
 
 ```javascript
@@ -71,7 +71,7 @@ module.exports = {
 
 ```
 
-####Init the app
+#### Init the app
 
 ```javascript
 /* app.js */
