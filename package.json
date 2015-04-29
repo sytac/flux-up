@@ -1,6 +1,6 @@
 {
   "name": "flux-up",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Manage modules and services for flux based applications",
   "main": "src/index.js",
   "scripts": {
